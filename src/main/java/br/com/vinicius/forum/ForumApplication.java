@@ -2,7 +2,15 @@ package br.com.vinicius.forum;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 
+
+/* Com essa anotação nos habilitamos esse suporte, pro Spring pegar da requisição, 
+ * dos parametros da url referentes a paginacao e repassar ao Spring Data
+ * */
+@EnableSpringDataWebSupport
+@EnableCaching // Habilita o uso de cache na aplicação.
 @SpringBootApplication
 public class ForumApplication {
 
