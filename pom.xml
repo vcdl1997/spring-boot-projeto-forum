@@ -24,7 +24,7 @@
 		</dependency>
 
 		<!-- reinicia automaticamente a cada alteracao -->
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -37,7 +37,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		
+
 		<!-- banco de dados em memória - H2 -->
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -49,33 +49,33 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-		
+
 		<!-- Dependência para cachear o retorno de metodos -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cache</artifactId>
 		</dependency>
-		
+
 		<!-- Dependência para trabalhar com autenticação -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-		
+
 		<!-- Dependencia para autenticação via JWT -->
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
 			<version>0.9.1</version>
 		</dependency>
-		
+
 		<!-- Dependencia para gerar a documentação da nossa API -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-		
+
 		<!-- Dependencia para fornecer a interface do swagger -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -88,9 +88,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
+		<finalName>forum</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
